@@ -1,0 +1,31 @@
+#source tr td{
+  height: 19px;
+  line-height: 19px;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+#source{
+  border-spacing: 0;
+  border-collapse: 5px;
+  font-family: Consolas, monaco;
+}
+#source > tbody > tr > td:nth-child(1){
+  width: 50px;
+  text-align: center;
+  background-color: rgb(46, 52, 54);
+}
+.line{
+  display: block;
+  margin-left: 5px;
+}
+.line div{
+  display: inline-block;
+}
+.head{color: rgb(255, 170, 0);}
+.key{color: rgb(246, 240, 128);}
+.text{color: rgb(255, 255, 255);}
+.operator{color: rgb(250, 162, 6);}
+.string{color: rgb(81, 228, 57);}
+.comment{color: rgb(30, 154, 224);}
+.number{color: rgb(255, 58, 130);}

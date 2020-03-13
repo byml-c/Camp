@@ -1,0 +1,79 @@
+#input{
+    display: block;
+}
+.comment{
+    display: inline-block;
+    position: relative;
+    margin-top: 35px;
+
+    height: 70px;
+    font-size: 60px;
+    line-height: 70px;
+}
+.pow{
+    display: inline-block;
+    
+    font-size: 0;
+    height: 110px;
+}
+.pow .down{
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    height: 70px;
+
+    font-size: 60px;
+    line-height: 70px;
+}
+.pow .up{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: -35px;
+    height: 35px;
+
+    font-size: 30px;
+    line-height: 35px;
+}
+#show{
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    color: #b8bfc6;
+    font-family: Computer Modern Math, Latin Modern Math;
+}
+#ans{
+    display: inline-block;
+    position: relative;
+    height: 110px;
+    font-size: 60px;
+    line-height: 70px;
+    color: #b8bfc6;
+    font-family: Computer Modern Math, Latin Modern Math;
+}
+#input{
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    min-width: 400px;
+    height: 50px;
+
+    color: #b8bfc6;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    box-sizing: content-box;
+    border-bottom: #b8bfc6 2px solid;
+    background-color: transparent;
+    font-family: Computer Modern Math, Latin Modern Math;
+}
+/* 30% [40%] 30%*/
+.show_ans{
+    position: relative;
+    top: 30px;
+    width: 100%;
+    overflow: auto;
+}
+.main{
+    text-align: center;
+}

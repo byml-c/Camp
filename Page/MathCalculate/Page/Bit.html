@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>位运算|数学计算</title>
+    <link rel="stylesheet" href="../Style/Title.css">
+    <link rel="stylesheet" href="../Style/MathBaseStyle.css">
+    <link rel="stylesheet" href="../Style/BitStyle.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="title">
+        <h2 id="title">位<span class="block"></span>运<span class="block"></span>算</h2>
+        <div class="UnderLine"></div>
+    </div>
+    <div class="main">
+        <div class="c-box left top">
+            <input type="text" class="input i_left" id="andA">
+            <div class="text and">&</div>
+            <input type="text" class="input i_right" id="andB">
+            <div class="text equ">=</div>
+            <div id="and_ans" class="ans"></div>
+            <div class="ans-box">
+                <div class="line" id="and_A"></div>
+                <div class="line" id="and_B"></div>
+                <div id="and_line" class="under-line">
+                    <div class="op">&</div>
+                </div>
+                <div class="line" id="and_C"></div>    
+            </div>
+        </div>
+        <div class="c-box right top">
+            <input type="text" class="input i_left" id="orA">
+            <div class="text or">|</div>
+            <input type="text" class="input i_right" id="orB">
+            <div class="text equ">=</div>
+            <div id="or_ans" class="ans"></div>
+            <div class="ans-box">
+                <div class="line" id="or_A"></div>
+                <div class="line" id="or_B"></div>
+                <div id="or_line" class="under-line">
+                    <div class="op">|</div>
+                </div>
+                <div class="line" id="or_C"></div>    
+            </div>
+        </div>
+        <div class="c-box left bottom">
+            <div class="text not">!</div>
+            <input type="text" class="input i_left" id="notA">
+            <div class="text equ">=</div>
+            <div id="not_ans" class="ans"></div>
+            <div class="ans-box">
+                <div class="line" id="not_A"></div>
+                <div id="not_line" class="under-line">
+                    <div class="op">!</div>
+                </div>
+                <div class="line" id="not_C"></div>    
+            </div>
+        </div>
+        <div class="c-box right bottom">
+            <input type="text" class="input i_left" id="xorA">
+            <div class="text or">^</div>
+            <input type="text" class="input i_right" id="xorB">
+            <div class="text equ">=</div>
+            <div id="xor_ans" class="ans"></div>
+            <div class="ans-box">
+                <div class="line" id="xor_A"></div>
+                <div class="line" id="xor_B"></div>
+                <div id="xor_line" class="under-line">
+                    <div class="op">^</div>
+                </div>
+                <div class="line" id="xor_C"></div>   
+            </div>
+        </div>
+    </div>
+    <script src="../Js/Bit.js"></script>
+    
+    <a href="../../MathCalculate.html" id="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+</body>
+</html>

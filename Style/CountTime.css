@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+
+    background-image: url("../Img/CountTimeImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 0px;
+}
+
+.page{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+}
+.main{
+    position: absolute;
+    top: 25vh;
+    left: 5vw;
+    right: 5vw;
+    background-color: #333;
+}
+.MessageBox{
+    position: absolute;
+    width: 38vw;
+    height: 60vh;
+}
+.left{
+    top: 0px;
+    left: 3vw;
+}
+.right{
+    top: 0px;
+    right: 3vw;
+}
+@media screen and (max-width: 1000px){
+    .MessageBox{
+        width: 100%;
+    }
+    .left{
+        top: 0;
+        left: 0;
+    }
+    .right{
+        top: 80vh;
+        left: 0px;
+    }
+}
+
+.icon{
+    position: absolute;
+    left: 50%;
+    width: 10vh;
+    height: 10vh;
+    border: 0.5vh #857dd3 solid;
+    transform: translate(-50%, 0) rotate(45deg);
+
+    transition-duration: 0.5s;
+}
+.icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    font-size: 5vh;
+    color: #857dd3;
+    
+    transition-duration: 0.5s;
+}
+.MessageBox:hover .icon{background-color: #857dd3;}
+.MessageBox:hover .icon i{color: #ffffff;}
+.SubTitle{
+    position: absolute;
+    top: 13vh;
+    left: 0px;
+    right: 0px;
+    height: 7vh;
+
+    color: #ffffff;
+    font-size: 4vh;
+    line-height: 7vh;
+    text-align: center;
+    font-family: "宋体", "新宋体", "楷体";
+}
+.SubTitle .block{width: 2vw;}
+.TextBox{
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 20vh;
+    bottom: 5vh;
+    border-radius: 1vh;
+    background-color: rgba(145, 139, 203, 0.3);
+
+    font-size: 3vh;
+    transition-duration: 0.5s;
+
+    overflow-y: auto;
+}
+.time_box{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 10%;
+    height: 50%;
+}
+.time_box input{
+    display: block;
+    position: absolute;
+    height: 40%;
+    width: 30%;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    border: 2px rgba(145, 139, 203, 0.7) solid;
+    border-radius: 2px;
+    background-color: transparent;
+}
+.i1, .i2, .i3{top: 5px;}
+.i4, .i5, .i6{bottom: 5px;}
+.i2, .i5{left: 35%;}
+.i1, .i4{left: 5px;}
+.i3, .i6{right: 5px;}
+.i7{top: 30%;left: 10%;}
+.i8{top: 30%;right: 10%;}
+
+.start_btn{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 20px;
+    height: 40px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition-duration: 0.2s;
+    background-color: rgba(145, 139, 203, 0.6);
+}
+.start_btn:hover{background-color: rgba(145, 139, 203, 0.9);}
+#show_out{
+    position: absolute;
+    top: 60vh;
+    width:60%;
+    left: 50%;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+}

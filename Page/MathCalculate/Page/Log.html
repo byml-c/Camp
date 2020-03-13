@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>对数计算|数学计算</title>
+    <link rel="stylesheet" href="../Style/Title.css">
+    <link rel="stylesheet" href="../Style/MathBaseStyle.css">
+    <link rel="stylesheet" href="../Style/LogStyle.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="title">
+        <h2 id="title">对<span class="block"></span>数<span class="block"></span>计<span class="block"></span>算</h2>
+        <div class="UnderLine"></div>
+    </div>
+    <div class="main">
+        <div id="log-function" class="function">
+            <div class="box">
+                <div class="log">log</div>
+                <input type="text" id="log_d" class="down" size="5">
+                <input type="text" id="log_t" class="true" size="5">
+                <div class="equ" id="log_equ">=</div>
+                <div id="show_log" class="show"></div>
+            </div>
+            <div class="box">
+                <div class="log">log</div>
+                <div class="down">2</div>
+                <input type="text" id="log2_t" class="true" size="5">
+                <div class="equ" id="log2_equ">=</div>
+                <div id="show_log2" class="show"></div>
+            </div>
+            <div class="box">
+                <div class="log">lg</div>
+                <input type="text" id="lg_t" class="true" size="5">
+                <div class="equ" id="lg_equ">=</div>
+                <div id="show_lg" class="show"></div>
+            </div>
+            <div class="box">
+                <div class="log">ln</div>
+                <input type="text" id="ln_t" class="true" size="5">
+                <div class="equ" id="ln_equ">=</div>
+                <div id="show_ln" class="show"></div>
+            </div>
+            <div class="missure-box">
+                <div class="show-box">
+                    <div id="showMissure" class="show-message"></div>
+                </div>
+                <div class="missure-text">当前精度</div>
+                <input type="text" id="missure_in" class="missure" maxlength="2">
+                <div class="missure-text">位</div>
+            </div>
+        </div>
+    </div>
+    <script src="../Js/MathBase.js"></script>
+    <script src="../Js/Log.js"></script>
+    
+    <a href="../../MathCalculate.html" id="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>课程计时|学习营地</title>
+    <link rel="stylesheet" href="../Style/Title.css">
+    <link rel="stylesheet" href="../Style/NavStyle.css">
+    <link rel="stylesheet" href="../Style/StudyCountStyle.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../js/StudyCountJs.js"></script>
+</head>
+<body>
+    <div class="nav-box">
+        <div class="nav-box">
+            <a href="./index.html" class="nav">
+                <i class="fa fa-home" aria-hidden="true" style="font-size: 25px;"></i>
+                <p class="text">主页</p>
+            </a>
+            <a href="./StudyWeb.html" class="nav">
+                <i class="fa fa-feed" aria-hidden="true" style="font-size: 22px;"></i>
+                <p class="text">网站</p>
+            </a>
+            <a href="./CountTime.html" class="nav">
+                <i class="fa fa-hourglass" aria-hidden="true" style="font-size: 20px;"></i>
+                <p class="text">计时</p>
+            </a>
+            <a href="./StudyCount.html" class="nav">
+                <i class="fa fa-book" aria-hidden="true" style="font-size: 23px;"></i>
+                <p class="text">学习</p>
+            </a>
+            <a href="./MathCalculate.html" class="nav">
+                <i class="fa fa-calculator" aria-hidden="true" style="font-size: 23px;"></i>
+                <p class="text">计算</p>
+            </a>
+            <a href="#" class="nav">
+                <i class="fa fa-sign-out" aria-hidden="true" style="font-size: 25px;"></i>
+                <p class="text">登出</p>
+            </a>
+        </div>
+    </div>
+    <div class="background"></div>
+    <div class="page">
+        <div class="title">
+            <h2>课<span class="block"></span>程<span class="block"></span>计<span class="block"></span>时</h2>
+            <div class="UnderLine"></div>
+        </div>
+        <div class="main">
+            <p class="NowTime"></p>
+            <p class="ShowClass"></p>
+            <p class="ShowTime"></p>
+        </div>
+        <button class="play off" onclick="CloseP();">
+            <i class="fa fa-toggle-on" id="pi" aria-hidden="true"></i>
+            预备铃
+            <div id="ShowPBox" class="ShowBox">
+                <div id="ShowP" class="Show"></div>
+            </div>
+        </button>
+        <button class="play add" onclick="Known(!know);">
+            <i class="fa fa-toggle-off" id="ki" aria-hidden="true"></i>
+            签到
+            <div id="ShowKBox" class="ShowBox">
+                <div id="ShowK" class="Show"></div>
+            </div>
+        </button>
+        <button class="play left" onclick="UPRing();">
+            <i class="fa fa-toggle-off" id="ui" aria-hidden="true"></i>
+            上课铃
+            <div id="ShowUBox" class="ShowBox">
+                <div id="ShowU" class="Show"></div>
+            </div>
+        </button>
+        <button class="play right" onclick="DownRing();">
+            <i class="fa fa-toggle-off" id="di" aria-hidden="true"></i>
+            下课铃
+            <div id="ShowDBox" class="ShowBox">
+                <div id="ShowD" class="Show"></div>
+            </div>
+        </button>
+        <audio id="Up">
+            <source src="../Music/上课铃.mp3" type="audio/mp3" />
+        </audio>
+        <audio id="Down">
+            <source src="../Music/下课铃.mp3" type="audio/mp3" />
+        </audio>
+        <audio id="Eye">
+            <source src="../Music/眼保健操.mp3" type="audio/mp3" />
+        </audio>
+    </div>
+</body>
+</html>

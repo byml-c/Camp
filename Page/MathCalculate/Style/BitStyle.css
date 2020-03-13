@@ -1,0 +1,126 @@
+.main{
+    overflow: initial;
+    height: auto;
+}
+.c-box{
+    position: absolute;
+    width: 45%;
+    height: 320px;
+    color: #b8bfc6;
+    box-sizing: content-box;
+    border: rgba(243, 156, 18, 0.4) 3px solid; 
+    font-family: Computer Modern Math, Latin Modern Math;
+}
+.left{left: 3%;}
+.right{right: 3%;}
+.bottom{top: 340px;}
+/* 3% [45%] 4% [45%] 3% */
+
+@media screen and (max-width: 1000px){
+    .c-box{width: 80%;}
+    .top.left{left: 10%; top: 0;}
+    .top.right{left: 10%; top: 340px;}
+    .bottom.left{left: 10%; top: 680px;}
+    .bottom.right{left: 10%; top: 1010px;}
+}
+
+input{
+    display: inline-block;
+    position: absolute;
+    width: 20%;
+    height: 50px;
+
+    border: none;
+    text-align: center;
+    color: #b8bfc6;
+    font-size: 40px;
+    box-sizing: content-box;
+    border-bottom: #b8bfc6 2px solid;
+    background-color: transparent;
+    font-family: Computer Modern Math, Latin Modern Math;
+}
+.i_left{
+    top: 20px;
+    left: 5%;
+}
+.i_right{
+    top: 20px;
+    left: 35%;
+}
+/* 5% [20%] 10% [20%] 10% [30%] 5%*/
+.text{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    width: 10%;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+.and{
+    left: 25%;
+}
+.equ{
+    left: 55%;
+}
+.ans{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 65%;
+    width: 30%;
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    box-sizing: content-box;
+    border: #b8bfc6 2px solid;
+}
+
+.ans-box{
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+}
+.line{
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 90%;
+    font-size: 40px;
+    text-align: right;
+    line-height: 50px;
+}
+.under-line{
+    position: absolute;
+    top: 115px;
+    width: 100%;
+    height: 2px;
+    background-color: #b8bfc6;
+}
+.op{
+    position: absolute;
+    left: 0px;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+}
+#notA{
+    left: 10%;
+    width: 40%;
+}
+#or_line .op{top: -60px;}
+#not_line .op{ top: -53px;}
+#and_B{top: 60px;}
+#and_C{top: 120px;}
+#or_B{top: 60px;}
+#or_C{top: 120px;}
+#not_A{top: 60px;}
+#not_C{top: 120px;}
+#xor_B{top: 60px;}
+#xor_C{top: 120px;}
+.or{left: 25%;}
+.not{left: 0%;}

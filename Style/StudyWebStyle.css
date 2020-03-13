@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+
+    background-image: url("../Img/StudyWebImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 0px;
+}
+
+.page{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+}
+.main{
+    position: absolute;
+    top: 25vh;
+    left: 5vw;
+    right: 5vw;
+    background-color: #333;
+}
+.MessageBox{
+    position: absolute;
+    width: 38vw;
+    height: 70vh;
+}
+.left{
+    top: 0px;
+    left: 3vw;
+}
+.right{
+    top: 0px;
+    right: 3vw;
+}
+@media screen and (max-width: 1000px){
+    .MessageBox{
+        width: 100%;
+    }
+    .left{
+        top: 0;
+        left: 0;
+    }
+    .right{
+        top: 80vh;
+        left: 0px;
+    }
+}
+
+.icon{
+    position: absolute;
+    left: 50%;
+    width: 10vh;
+    height: 10vh;
+    border: 0.5vh #857dd3 solid;
+    transform: translate(-50%, 0) rotate(45deg);
+
+    transition-duration: 0.5s;
+}
+.icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    font-size: 5vh;
+    color: #857dd3;
+    
+    transition-duration: 0.5s;
+}
+.MessageBox:hover .icon{background-color: #857dd3;}
+.MessageBox:hover .icon i{color: #ffffff;}
+.SubTitle{
+    position: absolute;
+    top: 13vh;
+    left: 0px;
+    right: 0px;
+    height: 7vh;
+
+    color: #ffffff;
+    font-size: 4vh;
+    line-height: 7vh;
+    text-align: center;
+    font-family: "宋体", "新宋体", "楷体";
+}
+.SubTitle .block{width: 2vw;}
+.TextBox{
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 20vh;
+    bottom: 5vh;
+    border-radius: 1vh;
+    background-color: rgba(145, 139, 203, 0.3);
+
+    font-size: 3vh;
+    transition-duration: 0.5s;
+
+    overflow-y: auto;
+}
+
+.TextBox a{
+    display: block;
+    margin: 9vh auto;
+    width: 300px;
+    height: 8vh;
+    
+    line-height: 8vh;
+    color: #ffffff;
+    text-align: center;
+
+    border-radius: 2vh;
+    text-decoration: none;
+    background-color: rgba(145, 139, 203, 0.7);
+}
+.TextBox a:hover{background-color: rgb(145, 139, 203);}

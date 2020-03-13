@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>指数计算|数学计算</title>
+    <link rel="stylesheet" href="../Style/Title.css">
+    <link rel="stylesheet" href="../Style/MathBaseStyle.css">
+    <link rel="stylesheet" href="../Style/PowStyle.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="title">
+        <h2 id="title">指<span class="block"></span>数<span class="block"></span>计<span class="block"></span>算</h2>
+        <div class="UnderLine"></div>
+    </div>
+    <div class="main">
+        <div id="pow-function" class="function">
+            <div class="box">
+                <input type="text" id="pow_t" class="true" size="5">
+                <input type="text" id="pow_p" class="up-right" size="5">
+                <div class="equ" id="pow_equ">=</div>
+                <div id="show_pow" class="show"></div>
+            </div>
+            <div class="box">
+                <div class="sqrt" id="sqrt_op">√<div id="sqrt_line"></div></div>
+                <input type="text" id="sqrt_t" class="true sq" size="5">
+                <div class="equ" id="sqrt_equ">=</div>
+                <div id="show_sqrt" class="show"></div>
+            </div>
+            <div class="box">
+                <input type="text" id="sqr_p" class="up-left" size="5">
+                <div class="sqrt" id="sqr_op">√<div id="sqr_line"></div></div>
+                <input type="text" id="sqr_t" class="true sq" size="5">
+                <div class="equ" id="sqr_equ">=</div>
+                <div id="show_sqr" class="show"></div>
+            </div>
+            <div class="missure-box">
+                <div class="show-box">
+                    <div id="showMissure" class="show-message"></div>
+                </div>
+                <div class="missure-text">当前精度</div>
+                <input type="text" id="missure_in" class="missure" maxlength="2">
+                <div class="missure-text">位</div>
+            </div>
+        </div>
+    </div>
+    <script src="../Js/MathBase.js"></script>
+    <script src="../Js/Pow.js"></script>
+    
+    <a href="../../MathCalculate.html" id="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+</body>
+</html>
